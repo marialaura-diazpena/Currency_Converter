@@ -1,0 +1,91 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('../images/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-image: url('../images/header.png');
+    background-position: 50%;
+    background-size: 30% ;
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    padding: 70px;
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 240%;
+    
+}
+
+header p {
+    font-weight: 600;
+}
+
+
+#selections{
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    width: 50% auto;
+    position: static;
+    padding: 20px;
+    border: 2px solid;
+}
+
+
+div.selection1 {
+    display: block;
+    float: left;
+    padding: 30px;
+    padding-left: 60px;
+}
+
+div.selection2 {
+    display: block;
+    float: right;
+    padding: 30px;
+    padding-right: 60px;
+}
+
+option {
+    size: 20px;
+}
+
+button {
+    margin: 40px;
+    display: block;
+    padding: 5px;
+    background-color: rgb(126, 32, 84);
+    color: white;
+    font-weight: 600;
+    position: 50%;
+
+}
+
+button:hover {
+    background-color: rgb(29, 133, 43);
+    color: white;
+}
+
+.euro, .pound, .usDollar, .caDollar, .yen {
+    font-size: 120%;
+    text-align: center;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Part One: Currency Converter</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Currency Converter</h1>
+            <p>Today's Date is June, 18th 2020</p>
+        </header>
+        <div class="wrapper">
+            
+        <div  id="selections">
+        
+        <div class="selection1" >
+            <p>Select your currency on hand</p>
+            <select id="sel1">
+            <option value="noOptionSel1">Select an option</option>
+            <option value="euroSel1">Euro</option>
+            <option value="usDollarSel1">US Dollar</option>
+            <option value="poundSel1">UK Pound Sterling</option>
+            <option value="yenSel1">Japanese Yen</option>
+            <option value="caDollarSel1">Canadian Dollar</option>
+            </select>
+
+            <p>Enter amount: </p>
+            <input type="number" name="current" id="current">
+        </div>
+
+        <div class="selection2" >
+            <p>Select the currency you want to convert to</p>
+            <select id="sel2">
+            <option value="noOptionSel2">Select an option</option>
+            <option value="euroSel2">Euro</option>
+            <option value="usDollarSel2">US Dollar</option>
+            <option value="poundSel2">UK Pound Sterling</option>
+            <option value="yenSel2">Japanese Yen</option>
+            <option value="caDollarSel2">Canadian Dollar</option>
+            </select>
+        </div>
+
+    </div>
+
+        <button onclick="changeCurrency();"> Change Currency </button>
+
+        <section class="euro">
+            <div id="euro-usDollar"></div>
+            <div id="euro-pound"></div>
+            <div id="euro-yen"></div>
+            <div id="euro-caDollar"></div>
+        </section>
+
+        <section class="usDollar">
+            <div id="usDollar-euro"></div>
+            <div id="usDollar-pound"></div>
+            <div id="usDollar-yen"></div>
+            <div id="usDollar-caDollar"></div>
+        </section>
+
+        <section class="pound">
+            <div id="pound-euro"></div>
+            <div id="pound-usDollar"></div>
+            <div id="pound-yen"></div>
+            <div id="pound-caDollar"></div>
+        </section>
+
+        <section class="yen">
+            <div id="yen-euro"></div>
+            <div id="yen-usDollar"></div>
+            <div id="yen-pound"></div>
+            <div id="yen-caDollar"></div>
+        </section>
+
+        <section class="caDollar">
+            <div id="caDollar-euro"></div>
+            <div id="caDollar-usDollar"></div>
+            <div id="caDollar-pound"></div>
+            <div id="caDollar-yen"></div>
+        </section>
+
+    </div>
+
+
+        <script type="text/javascript" src="assets/scripts/currency.js"></script>
+    </body>
+
+</html>
